@@ -1,1 +1,4 @@
-# mtm6302-capstone-TannerG977
+# Assignment 1
+- Tanner Green
+- 41002114
+- I am choosing the quiz website option. 
