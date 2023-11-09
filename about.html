@@ -23,9 +23,9 @@
     <title>Capstone</title>
 </head>
 <body>
-    <header role="banner">
+    <header>
         <a href="index.html">
-          <img href="index.html" class="logo" src="images/logo.jpg" alt="logo" width="100" height="100">
+          <img class="logo" src="images/logo.jpg" alt="logo" width="100" height="100">
         </a>
 
         <!--Desktop Header-->
@@ -37,9 +37,9 @@
         
             <!--Desktop nav-->
             <div class="desktopnav">
-                <a href="index.html"><button class="navbtn">Home</button></a>
-                <a href="quizzes.html"><button class="navbtn">Quizzes</button></a>
-                <a href="about.html"><button class="navbtn">About</button></a>
+                <a class="navbtn" href="index.html">Home</a>
+                <a class="navbtn" href="quizzes.html">Quizzes</a>
+                <a class="navbtn" href="about.html">About</a>
             </div>
         </div>
     
@@ -55,24 +55,24 @@
               <div>
                 <div class="container text-center">
                   <div class="col mt-3 mb-3">
-                    <a href="index.html"><button class="navbtn">Home</button></a>
+                    <a class="navbtn" href="index.html">Home</a>
                   </div>
                   <div class="col mt-3 mb-3">
-                    <a href="quizzes.html"><button class="navbtn">Quizzes</button></a>
+                    <a class="navbtn" href="quizzes.html">Quizzes</a>
                   </div>
                   <div class="col mt-3 mb-3">
-                    <a href="about.html"><button class="navbtn">About</button></a>
+                    <a class="navbtn" href="about.html">About</a>
                   </div>
                 </div>
               </div>
             </div>
             <nav class="navbar justify-content-end">
               <button class="navbar-toggler p-3" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
+                <div class="navbar-toggler-icon">
                     <div class="hamburger"></div>
                     <div class="hamburger"></div>
                     <div class="hamburger"></div>
-                </span>
+                </div>
               </button>
             </nav>
           </div>
@@ -86,24 +86,26 @@
         </div>
         <div class="divider"></div>
         <form class="maincontainer">
-            <label for="fname"><h2>Your Name:</h2></label><br>
+            <label for="fname">Your Name:</label><br>
             <input type="text" id="fname" name="fname"><br>
-            <label for="lname"><h2>Email:</h2></label><br>
+            <label for="lname">Email:</label><br>
             <input type="text" id="lname" name="lname"><br>
-            <label for="message"><h2>Your Message:</h2></label><br>
+            <label for="message">Your Message:</label><br>
             <textarea id="message" name="Your Message" rows="7"></textarea><br>
             <div class="centerbtn">
-                <a><button class="navbtn">Submit</button></a>
+                <a class="navbtn">Submit</a>
             </div>
         </form>
     </main>
     <footer>
         <ul class="centerbtn">
-          <li><a href="index.html"><button class="navbtn">Home</button></a></li>
-          <li><a href="quizzes.html"><button class="navbtn">Quizzes</button></a></li>
-          <li><a href="about.html"><button class="navbtn">About</button></a></li>
+          <li><a class="navbtn" href="index.html">Home</a><li>
+          <li><a class="navbtn" href="quizzes.html">Quizzes</a></li>
+          <li><a class="navbtn" href="about.html">About</a></li>
         </ul>
-        <img href="index.html" class="logo2" src="images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">
+          <img  class="logo2" src="images/logo.jpg" alt="logo" width="50" height="50">
+        </a>
     </footer>
 
     <!--JavaScript-->
