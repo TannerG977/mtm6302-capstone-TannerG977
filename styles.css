@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Styles*/
+
+
+    /* Universal Styles */
+
+    .navbtn {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(246, 193, 147);
+        border-radius: 20px;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(93, 87, 107);
+        font-weight: bold;
+    }
+
+
+    .bigbtn {
+        width: 225px;
+        height: 40px;
+        background-color: rgb(246, 193, 147);
+        border-radius: 20px;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(93, 87, 107);
+        font-weight: bold;
+    }
+
+    header {
+        background-color: rgb(93, 87, 107);
+    }
+
+    body {
+        background-color: rgb(230, 235, 224);
+    }
+
+    h1 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 40px;
+        color: rgb(93, 87, 107);
+    }
+
+    h2 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 30px;
+        color: rgb(93, 87, 107);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-family: 'DM Sans', sans-serif;
+        margin-top: 20px;
+        font-size: 20px;
+        color: rgb(93, 87, 107);
+    }
+
+    .divider {
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 10px;
+        background-color: rgb(246, 193, 147);
+        border-radius: 5px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .maincontainer {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 80px;
+    }
+
+    .centerbtn {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .centerbtn2 {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    ul {
+        display: inline;
+    }
+
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: rgb(93, 87, 107);
+        margin-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .btn1 {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(246, 193, 147);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(93, 87, 107);
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    label {
+        margin-top: 20px;
+    }
+
+    textarea {
+        width: 100%;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+        color: rgb(93, 87, 107);
+        padding: 5px;
+    }
+
+
+
+
+    /* Desktop Styles */
+
+    .desktopnav {
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mobileheader {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: 1;
+        height: 15%;
+        width: auto;
+    }
+
+    .logo2 {
+        display: block;
+        float: right;
+        margin-right: 15px;
+    }
+
+    .banner {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+      }
+      
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .quizzespic {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+
+    /* Desktop Media Query */
+
+        @media (min-width: 900px) {
+
+            .picturecontainer {
+                margin-left: 15%;
+                margin-right: 15%;
+                border-radius: 5px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                justify-content: space-between;
+                display: flex;
+                text-align: center;
+            }
+
+            input {
+                width: 60%;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 20px;
+                color: rgb(93, 87, 107);
+                padding: 5px;
+            }
+
+        }
+
+
+      /* Mobile Styles */
+
+        @media (max-width: 900px) {
+
+            /* Mobile Header */
+
+            .desktopheader {
+                display: none;
+            }
+
+            .mobileheader {
+                display: contents;
+            }
+
+            .logo {
+                position: absolute;
+                top: 3%;
+                left: 3%;
+                z-index: 1;
+                height: 10%;
+                width: auto;
+            }
+
+            .banner {
+                position: relative;
+                width: 100%;
+                max-width: 100%;
+              }
+              
+              .banner img {
+                width: 100%;
+                height: 200%;
+              }
+
+            .navbar-toggler {
+                background-color: rgb(246, 193, 147);
+                margin-right: 3%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: rgb(246, 193, 147);
+                border-color: rgb(246, 193, 147);
+            }
+
+            .navbar {
+                background-color: rgb(93, 87, 107);  
+            }
+            
+            .hamburger {
+                width: 31px;
+                height: 4px;
+                background-color: rgb(93, 87, 107);
+                border-radius: 5px;
+                margin-top: 5px;
+              }     
+
+              .picturecontainer {
+                margin-left: 15%;
+                margin-right: 15%;
+                border-radius: 5px;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                display: grid;
+                text-align: center;
+            }
+
+            .picsubcontainer {
+                margin-bottom: 50px;
+            }
+
+            input {
+                width: 100%;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 20px;
+                color: rgb(93, 87, 107);
+                padding: 5px;
+            }
+        }
