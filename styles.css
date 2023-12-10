@@ -87,6 +87,90 @@ table {
         text-align: center;
     }
 
+    .diffbtneasy {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(93, 87, 107);
+        border-radius: 20px;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(246, 193, 147);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .diffbtnmedium {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(93, 87, 107);
+        border-radius: 20px;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(246, 193, 147);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .diffbtnadvanced {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(93, 87, 107);
+        border-radius: 20px;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(246, 193, 147);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .submitbtn {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(93, 87, 107);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(246, 193, 147);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 10%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .resetbtn {
+        display: inline-block;
+        width: 150px;
+        height: 40px;
+        background-color: rgb(93, 87, 107);
+        border-radius: 20px;
+        border: none;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(246, 193, 147);
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        margin-top: -200px;
+    }  
+
+
     header {
         background-color: rgb(93, 87, 107);
     }
@@ -107,6 +191,13 @@ table {
         color: rgb(93, 87, 107);
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    h3 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 30px;
+        color: rgb(93, 87, 107);
+        margin: 15px;
     }
 
     p {
@@ -159,7 +250,7 @@ table {
         background-color: rgb(93, 87, 107);
         margin-top: 100px;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 65px;
     }
 
     .btn1 {
@@ -179,12 +270,10 @@ table {
     }
 
     label {
-        margin-top: 20px;
         font-family: 'DM Sans', sans-serif;
-        font-size: 30px;
+        font-size: 15px;
         color: rgb(93, 87, 107);
-        margin-top: 15px;
-        margin-bottom: 15px;
+        display: inline;
     }
 
     textarea {
@@ -195,6 +284,82 @@ table {
         padding: 5px;
     }
 
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+    }
+
+    .exitbtn {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(246, 193, 147);
+        border-radius: 20px;
+        border: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Varela Round', sans-serif;
+        color: rgb(93, 87, 107);
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+        padding-top: 12px;
+        float: right;
+    }
+
+    #question {
+        text-align: center;
+    }
+
+    #mediumquestion {
+        text-align: center;
+    }
+
+    #advancedquestion {
+        text-align: center;
+    }
+
+    .innerpopupdiv {
+        margin-top: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    input {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .answercountdiv {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 10px;
+        display: flex;
+    }
+
+    /* Hover States */
+    .diffbtneasy:hover,
+    .diffbtnmedium:hover,
+    .diffbtnadvanced:hover, 
+    .submitbtn:hover,
+    .resetbtn:hover {
+        cursor: pointer;
+        scale: 105%;
+        color: aqua;
+    }
+    
+    .exitbtn:hover {
+        cursor: pointer;
+        scale: 105%;
+    }
+
+
 
     /* Desktop Styles */
 
@@ -202,10 +367,6 @@ table {
         text-align: center;
         padding-top: 40px;
         padding-bottom: 40px;
-    }
-
-    .mobileheader {
-        display: none;
     }
 
     .logo {
@@ -240,32 +401,42 @@ table {
         margin-top: 20px;
     }
 
+    .resultsdiv {
+        text-align: center;
+    }
+
+    #answersRight {
+        margin-left: 15px; 
+    }
+
+    #answersWrong {
+        margin-left: 15px; 
+    }
+
 
     /* Desktop Media Query */
 
         @media (min-width: 900px) {
 
             .picturecontainer {
-                margin-left: 15%;
-                margin-right: 15%;
+                margin-left: 30%;
+                margin-right: 30%;
                 border-radius: 5px;
                 margin-top: 80px;
-                margin-bottom: 80px;
+                margin-bottom: 40px;
                 justify-content: space-between;
                 display: flex;
                 text-align: center;
             }
-
-            input {
-                width: 60%;
-                font-family: 'DM Sans', sans-serif;
-                font-size: 20px;
-                color: rgb(93, 87, 107);
-                padding: 5px;
-            }
-
-
         }
+
+            .popupcontainer {
+                background-color: rgb(246, 193, 147);
+                width: 70%;
+                height: 80%;
+                border-radius: 10px;
+                margin-top: 60px;
+            }
 
 
       /* Mobile Styles */
@@ -273,14 +444,6 @@ table {
         @media (max-width: 900px) {
 
             /* Mobile Header */
-
-            .desktopheader {
-                display: none;
-            }
-
-            .mobileheader {
-                display: contents;
-            }
 
             .logo {
                 position: absolute;
@@ -300,27 +463,6 @@ table {
               .banner img {
                 width: 100%;
                 height: 200%;
-              }
-
-            .navbar-toggler {
-                background-color: rgb(246, 193, 147);
-                margin-right: 3%;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                color: rgb(246, 193, 147);
-                border-color: rgb(246, 193, 147);
-            }
-
-            .navbar {
-                background-color: rgb(93, 87, 107);  
-            }
-            
-            .hamburger {
-                width: 31px;
-                height: 4px;
-                background-color: rgb(93, 87, 107);
-                border-radius: 5px;
-                margin-top: 5px;
               }     
 
               .picturecontainer {
@@ -328,7 +470,7 @@ table {
                 margin-right: 15%;
                 border-radius: 5px;
                 margin-top: 80px;
-                margin-bottom: 80px;
+                margin-bottom: 40px;
                 display: grid;
                 text-align: center;
             }
@@ -337,11 +479,11 @@ table {
                 margin-bottom: 50px;
             }
 
-            input {
-                width: 100%;
-                font-family: 'DM Sans', sans-serif;
-                font-size: 20px;
-                color: rgb(93, 87, 107);
-                padding: 5px;
+            .popupcontainer {
+                background-color: rgb(246, 193, 147);
+                width: 70%;
+                border-radius: 10px;
+                margin-top: 60px;
             }
+
         }
